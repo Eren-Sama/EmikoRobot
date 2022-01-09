@@ -798,7 +798,10 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Hi, i'm alive.",
+                "Ara Ara Ruka is awake",
+
+**Python:** `{memek()}`
+**Telegram Library:** `v{peler}`""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
