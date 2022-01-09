@@ -9,6 +9,9 @@ from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
 from EmikoRobot import LOGGER, pbot as app
 
+LOGGER = int(-1001707042308)
+
+
 
 def split_limits(text):
     if len(text) < 2048:
