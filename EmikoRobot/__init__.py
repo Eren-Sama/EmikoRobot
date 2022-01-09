@@ -7,7 +7,7 @@ import spamwatch
 import telegram.ext as tg
 from pyrogram import Client, errors
 from telethon import TelegramClient
-from AmeliaRobot.utils.logger import log 
+from EmikoRobot.utils.logger import log 
 StartTime = time.time()
 
 # enable logging
@@ -100,7 +100,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from AsunaRobot.config import Development as Config
+    from EmikoRobot.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -189,7 +189,7 @@ else:
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("amelia", API_ID, API_HASH)
-pbot = Client("ameliapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+pbot = Client("emikorobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
@@ -199,7 +199,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from AmeliaRobot.modules.helper_funcs.handlers import (
+from EmikoRobot.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
