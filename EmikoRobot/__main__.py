@@ -379,8 +379,11 @@ def emiko_about_callback(update, context):
                  ],
                  [
                     InlineKeyboardButton(text="Support", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="Owner", url="https://t.me/x11fq"),
-                 ]
+                    InlineKeyboardButton(text="Credits", callback_data="emiko_credit"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Owner", url="https:https://t.me/x11fq"),
+                 ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
                  ]
@@ -458,25 +461,25 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="x11fq", url="https://t.me/x11fq"),
-                    InlineKeyboardButton(text="SusyBakaCat", url="https://t.me/SusyBakaCat"),
+                    InlineKeyboardButton(text="sena-ex", url="https://github.com/kennedy-ex"),
+                    InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
                  ],
                  [
-                    InlineKeyboardButton(text="Ani-Chat", url="https://t.me/anyme_era"),
-                    InlineKeyboardButton(text="Ani-Pfp", url="https://t.me/pfp_era"),
+                    InlineKeyboardButton(text="Feri", url="https://github.com/FeriEXP"),
+                    InlineKeyboardButton(text="riz-ex", url="https://github.com/riz-ex"),
                  ],
                  [
-                    InlineKeyboardButton(text="Empty", url="#"),
-                    InlineKeyboardButton(text="Emptyr", url="#"),
+                    InlineKeyboardButton(text="Anime Kaizoku", url="https://github.com/animekaizoku"),
+                    InlineKeyboardButton(text="TheGhost Hunter", url="https://github.com/HuntingBots"),
                  ],
                  [
-                    InlineKeyboardButton(text="Empty", url=""),
-                    InlineKeyboardButton(text="Empty", url="#"),
+                    InlineKeyboardButton(text="Inuka Asith", url="https://github.com/inukaasith"),
+                    InlineKeyboardButton(text="Noob-Kittu", url="https://github.com/noob-kittu"),
                  ],
                  [
-                    InlineKeyboardButton(text="Empty", url="#"),
-                    InlineKeyboardButton(text="Empty", url="#"),
-                 ]
+                    InlineKeyboardButton(text="Queen Arzoo", url="https://github.com/QueenArzoo"),
+                    InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
+                 ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
                  ]
