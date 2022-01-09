@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an kawaii Anime themed management bot [✨](https://telegra.ph/file/8543529344e7b549bba68.mp4)
+✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -92,7 +92,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Ruka Sarashina", callback_data="emiko_"),
+        InlineKeyboardButton(text="About Emiko Robot", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -102,7 +102,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Ruka To Your Group ➗", url="t.me/Ruka_Robot?startgroup=new"),
+            text="➗ Add Emiko To Your Group ➗", url="t.me/EmiexRobot?startgroup=new"),
     ],
 ]
 
@@ -110,10 +110,10 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-EMI_IMG = "https://telegra.ph/file/7971bd0a4530f2d571b43.jpg"
+EMI_IMG = "https://telegra.ph/file/5ff1cb39902809148f07f.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @x11fq \
+ You can support the project by contacting @excrybaby \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -229,7 +229,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"<b>Hi I'm Ruka robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
+            f"👋 Hi, I'm {dispatcher.bot.first_name}. Nice to meet You.",
             parse_mode=ParseMode.HTML
        )
 
@@ -360,15 +360,15 @@ def emiko_about_callback(update, context):
     query = update.callback_query
     if query.data == "emiko_":
         query.message.edit_text(
-            text="๏ I'm *Ruka*, A powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Emiko*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Ruka's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for RukaRobot.",
+            "\n\n_Emiko's licensed under the GNU General Public License v3.0_"
+            "\n\n Click on button bellow to get basic help for EmikoRobot.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -382,7 +382,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Credits", callback_data="emiko_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Owner", url="https:https://t.me/x11fq"),
+                    InlineKeyboardButton(text="Source Code", url="https://github.com/kennedy-ex/EmikoRobot"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
@@ -408,7 +408,7 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, RukaRobot now ready to manage your group."
+            "\nCongragulations, EmikoRobot now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -441,7 +441,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="https://t.me/RukaSupport_Chat"),
+                    InlineKeyboardButton(text="Support", url="t.me/RukaSupport_Chat"),
                     InlineKeyboardButton(text="Updates", url="https://t.me/Ruka_updates"),
                  ],
                  [
@@ -798,10 +798,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Ara Ara Ruka is awake!**
-
-**Python:** `{memek()}`
-**Telegram Library:** `v{peler}`""",
+                "Ara Ara Ruka is awake",+
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
