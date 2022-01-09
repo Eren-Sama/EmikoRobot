@@ -10,7 +10,7 @@ from urllib.parse import urlencode
 import requests
 from bs4 import BeautifulSoup
 from PIL import Image
-from search_engine_parser import GoogleSearch
+from search_engine_parser.core.engines.google import Search as GoogleSearch
 
 import bs4
 import html2text
@@ -268,7 +268,7 @@ async def apk(e):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\n===> Emiko <==="
+        app_details += "\n\n===> Siesta <==="
         await e.reply(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await e.reply("No result found in search. Please enter **Valid app name**")
@@ -287,7 +287,7 @@ __help__ = """
 ❂ /github <username>*:* Get information about a GitHub user.
 ❂ /country <country name>*:* Gathering info about given country
 ❂ /imdb <Movie name>*:* Get full info about a movie with imdb.com
-❂ Emiko <query>*:* Emiko answers the query
+❂ Ruka <query>*:* Siesta answers the query
 
-  💡Ex: `Emiko where is Japan?`
+  💡Ex: `Ruka where is Japan?`
 """
