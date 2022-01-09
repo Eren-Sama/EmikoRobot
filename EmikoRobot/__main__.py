@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-themed management bot [✨](https://telegra.ph/file/8543529344e7b549bba68.mp4)
+✪ I'm an kawaii Anime themed management bot [✨](https://telegra.ph/file/8543529344e7b549bba68.mp4)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -360,7 +360,7 @@ def emiko_about_callback(update, context):
     query = update.callback_query
     if query.data == "emiko_":
         query.message.edit_text(
-            text="๏ I'm *Ruka*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Ruka*, A powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -379,11 +379,8 @@ def emiko_about_callback(update, context):
                  ],
                  [
                     InlineKeyboardButton(text="Support", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="emiko_credit"),
-                 ],
-                 [
                     InlineKeyboardButton(text="Owner", url="https://t.me/x11fq"),
-                 ],
+                 ]
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
                  ]
