@@ -798,7 +798,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "Ara Ara Ruka is awake",
+                "Ara Ara Ruka is awake",(https://telegra.ph/file/7971bd0a4530f2d571b43.jpg)
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
