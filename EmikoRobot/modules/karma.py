@@ -1,16 +1,23 @@
-import re
-
+import asyncio
 from pyrogram import filters
+from aiohttp import ClientSession
+from Python_ARQ import ARQ
 
-from EmikoRobot import app
-from EmikoRobot.core.decorators.errors import capture_err
-from EmikoRobot.core.decorators.permissions import adminsOnly
-from EmikoRobot.core.sections import section
-from EmikoRobot.utils.dbfunctions import (alpha_to_int, get_karma, get_karmas,
-                                   int_to_alpha, is_karma_on, karma_off,
-                                   karma_on, update_karma)
+from EmikoRobot import pbot as app, BOT_ID
+from EmikoRobot.utils.errors import capture_err
+from EmikoRobot.utils.permissions import adminsOnly
+from EmikoRobot.ex_plugins.dbfunctions import (
+    alpha_to_int,
+    get_karma,
+    get_karmas,
+    int_to_alpha,
+    is_karma_on,
+    karma_off,
+    karma_on,
+    update_karma,
+)      
 from EmikoRobot.utils.filter_groups import karma_negative_group, karma_positive_group
-from EmikoRobot.utils.functions import get_user_id_and_usernames
+from EmikoRobot import arq
 
 __MODULE__ = "Karma"
 __HELP__ = """[UPVOTE] - Use upvote keywords like "+", "+1", "thanks" etc to upvote a message.
