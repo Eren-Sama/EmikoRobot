@@ -23,6 +23,7 @@ regex_upvote = r"^(\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|good|ð
 regex_downvote = r"^(-|--|-1|ðŸ‘Ž|-- .+)$"
 
 
+
 @app.on_message(
     filters.text
     & filters.group
