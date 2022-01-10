@@ -469,16 +469,16 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="girls_lob", url="https://t.me/girls_lob"),
                  ],
                  [
-                    InlineKeyboardButton(text="Offtopic", url="https://t.me/anyme_era"),
-                    InlineKeyboardButton(text="Chickako", url="https://t.me/chickako"),
+                    InlineKeyboardButton(text="chat", url="https://t.me/anyme_era"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/Ruka_Updates"),
                  ],
                  [
-                    InlineKeyboardButton(text="Offtopic", url="https://t.era"),
-                    InlineKeyboardButton(text="Noob-Kittu", url="https://github.com/noob-kittu"),
+                    InlineKeyboardButton(text="pfp", url="https://t.me/pfp_era"),
+                    InlineKeyboardButton(text="anime", url="https://t.me/anime_in_30mb"),
                  ],
                  [
-                    InlineKeyboardButton(text="Queen Arzoo", url="https://github.com/QueenArzoo"),
-                    InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
+                    InlineKeyboardButton(text="logs", url="https://t.me/Ruka_Logs"),
+                    InlineKeyboardButton(text="support", url="https://t.me/RukaSupport_Chat"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
