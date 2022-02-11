@@ -408,7 +408,7 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, Muzan now ready to manage your group."
+            "\nCongragulations, Giyu now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -436,7 +436,7 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_support":
         query.message.edit_text(
             text="*๏ Giyu Support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Muzan.",
+            "\nJoin My Support Group/Channel for see or report a problem on Giyu.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -456,29 +456,21 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_credit":
         query.message.edit_text(
             text=f"๏ Credis for Giyu\n"
-            "\nHere Developers Making And Give Inspiration For Made The RukaRobot",
+            "\nHere Developers Making And Give Inspiration For Made The GiyuBot",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="SusyBakaCat", url="https://t.me/SusyBakaCat"),
-                    InlineKeyboardButton(text="x11fq", url="https://t.me/x11fq"),
+                    InlineKeyboardButton(text="Owner", url="https://t.me/Euthanizer"),
+                    InlineKeyboardButton(text="Dev", url="https://t.me/BakaFromEarth"),
                  ],
                  [
-                    InlineKeyboardButton(text="Baka", url="https://t.me/BakaOfficial"),
-                    InlineKeyboardButton(text="girls_lob", url="https://t.me/girls_lob"),
+                    InlineKeyboardButton(text="AnimeChat", url="https://t.me/animenationchat"),
+                    InlineKeyboardButton(text="AnimeChannel", url="https://t.me/AnimeNationOfficial"),
                  ],
                  [
-                    InlineKeyboardButton(text="chat", url="https://t.me/anyme_era"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/Ruka_Updates"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="pfp", url="https://t.me/pfp_era"),
-                    InlineKeyboardButton(text="anime", url="https://t.me/anime_in_30mb"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="logs", url="https://t.me/Ruka_Logs"),
-                    InlineKeyboardButton(text="support", url="https://t.me/RukaSupport_Chat"),
+                    InlineKeyboardButton(text="Logs", url="https://t.me/GiyuLogs"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/GiyuSupport"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
