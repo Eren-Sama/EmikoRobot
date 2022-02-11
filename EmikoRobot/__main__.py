@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an Anime-themed management bot [🔥](https://telegra.ph/file/6cffc468dd2e10f20ab20.jpg)
+✪ I'm an Anime-themed management bot [🔥](https://telegra.ph/file/e109d77fa5b192be78a46.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -92,7 +92,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Muzan", callback_data="emiko_"),
+        InlineKeyboardButton(text="About Giyu", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -102,7 +102,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text=" Add Muzan To Your Group ", url="t.me/Ruka_Robot?startgroup=new"),
+            text=" Add Giyu To Your Group ", url="t.me/Ruka_Robot?startgroup=new"),
     ],
 ]
 
@@ -382,7 +382,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Credits", callback_data="emiko_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Owner", url="https://t.me/x11fq"),
+                    InlineKeyboardButton(text="Owner", url="https://t.me/Euthanizer"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
@@ -435,14 +435,14 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ muzan support chats*"
+            text="*๏ Giyu Support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on Muzan.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/RukaSupport_Chat"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/Ruka_updates"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/GiyuSupport"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/GiyuUpdates"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
@@ -455,7 +455,7 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_credit":
         query.message.edit_text(
-            text=f"๏ Credis for Muzan\n"
+            text=f"๏ Credis for Giyu\n"
             "\nHere Developers Making And Give Inspiration For Made The RukaRobot",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
