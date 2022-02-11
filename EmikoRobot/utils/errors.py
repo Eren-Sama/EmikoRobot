@@ -9,7 +9,7 @@ from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
 from EmikoRobot import LOGGER, pbot as app
 
-LOGGER = int(-1001791813393)
+LOGGER = int(-1001428982281)
 
 
 
