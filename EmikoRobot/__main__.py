@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an kawaii Anime-themed management bot [✨](https://telegra.ph/file/8543529344e7b549bba68.mp4)
+✪ I'm an Anime-themed management bot [🔥](https://telegra.ph/file/6cffc468dd2e10f20ab20.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -92,7 +92,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Ruka Robot", callback_data="emiko_"),
+        InlineKeyboardButton(text="About Muzan", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -102,7 +102,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text=" Add Ruka To Your Group ", url="t.me/Ruka_Robot?startgroup=new"),
+            text=" Add Muzan To Your Group ", url="t.me/Ruka_Robot?startgroup=new"),
     ],
 ]
 
@@ -110,7 +110,7 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-EMI_IMG = "https://telegra.ph/file/7971bd0a4530f2d571b43.jpg"
+EMI_IMG = "https://telegra.ph/file/6cffc468dd2e10f20ab20.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @x11fq \
@@ -408,7 +408,7 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, RukaRobot now ready to manage your group."
+            "\nCongragulations, Muzan now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -435,8 +435,8 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ Ruka support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Ruka.",
+            text="*๏ muzan support chats*"
+            "\nJoin My Support Group/Channel for see or report a problem on Muzan.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -455,7 +455,7 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_credit":
         query.message.edit_text(
-            text=f"๏ Credis for Ruka\n"
+            text=f"๏ Credis for Muzan\n"
             "\nHere Developers Making And Give Inspiration For Made The RukaRobot",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -798,7 +798,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "Ara Ara Ruka is awake",
+                "Im awake again",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
