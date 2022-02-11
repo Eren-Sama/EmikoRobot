@@ -4,7 +4,7 @@
 
 <h4><p align="center"> Giyu Superbot </p></h4>
 
-<p align="center">Emiko Robot is a modular bot running on python3 with anime theme and have a lot features.</p>
+<p align="center">Giyu Superbot is a modular bot running on python3 with anime theme and have a lot features.</p>
 
 <p align="center">
 <a href="https://t.me/emiexrobot"> <img src="https://img.shields.io/badge/Emiko-Robot-blue?&logo=telegram" alt="Emiko on Telegram" /> </a><br>
