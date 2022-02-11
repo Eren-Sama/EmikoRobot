@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an Anime-themed management bot [🔥](https://telegra.ph/file/9b4848013700cd2c0e211.mp4)
+✪ I'm Giyu an Anime-themed management bot [🔥](https://telegra.ph/file/9b4848013700cd2c0e211.mp4)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -95,7 +95,7 @@ buttons = [
         InlineKeyboardButton(text="About Giyu", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(text="My Powers", callback_data="help_back"),
         InlineKeyboardButton(
             text="Try inline!​​", switch_inline_query_current_chat=""
         ),
