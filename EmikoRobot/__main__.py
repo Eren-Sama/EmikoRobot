@@ -102,7 +102,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text=" Add Giyu To Your Group ", url="t.me/Ruka_Robot?startgroup=new"),
+            text=" Summon Me ", url="t.me/Ruka_Robot?startgroup=new"),
     ],
 ]
 
