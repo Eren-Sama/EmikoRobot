@@ -228,11 +228,31 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        update.effective_message.reply_text(
-            f" Hoi, {dispatcher.bot.first_name}. is already started.",
-            parse_mode=ParseMode.HTML
-       )
-
+        GIYUSTART = " https://telegra.ph/file/78a6854e2638381226170.mp4"
+first_name = update.effective_user.first_name
+        update.effective_message.reply_video(
+           GIYUSTART , caption= "<b>oioioi {} , I am Giyu! I am here to make your group powerful. I aim to eradicate all the demons present in your groups in order to protect your group \nHaven't sleep since</b>: <code>{}</code>".format(
+                escape_markdown(first_name),
+                uptime
+            ),
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="「SUPPORT」",
+                            url=f"https://telegram.dog/{SUPPORT_CHAT}",
+                        ),
+                        InlineKeyboardButton(
+                            text="「UPDATES」",
+                            url="https://telegram.dog/GiyuUpdates",
+                        ),
+                        InlineKeyboardButton(
+                          text="「HELP」", url=f"https://t.me/{BOTUSERNAME}?start=help"
+                        ),  
+                    ]
+                ]
+            ),
 
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
