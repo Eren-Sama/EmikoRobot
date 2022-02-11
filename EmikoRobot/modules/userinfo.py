@@ -315,8 +315,8 @@ def info(update: Update, context: CallbackContext):
     elif user.id in WOLVES:
         text += "\n\nThe Disaster level of this person is 'Soldier'."
         disaster_level_present = True
-    elif user.id == 1829047705:
-         text += "\n\nOwner Of A Bot. Queen Of @excrybaby. Bot Name Inspired From 'JoJo'."
+    elif user.id == 1181609792:
+         text += "\n\nOwner Of A Bot. Servant Of @Euthanizer. Bot Name Inspired From 'Demon Slayer'."
          disaster_level_present = True
 
     try:
@@ -353,9 +353,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/Ruka_updates/6"),
+                                "Health", url="https://t.me/GiyuUpdates/4"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/Ruka_updates/7")
+                                "Disaster", url="https://t.me/GiyuUpdates/5")
                         ],
                     ]
                 ),
@@ -371,9 +371,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/Ruka_updates/6"),
+                                "Health", url="https://t.me/GiyuUpdates/4"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/Ruka_updates/7")
+                                "Disaster", url="https://t.me/GiyuUpdates/5")
                         ],
                     ]
                 ),
@@ -445,9 +445,9 @@ def set_about_me(update: Update, context: CallbackContext):
 
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "<b>╔═━「 Current Ruka Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "<b>╔═━「 Current Giyu Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
-    result += "\n<b>╘═━「 Powered By x11fq 」</b>"
+    result += "\n<b>╘═━「 Powered By @HashirasNetwork 」</b>"
     update.effective_message.reply_text(
         result,
         parse_mode=ParseMode.HTML, 
@@ -569,7 +569,7 @@ When marked as AFK, any mentions will be replied to with a message stating that 
   - brb <reason>: Same as the afk command, but not a command. 
   
 *What is that health thingy?*
- Come and see [HP System explained](https://t.me/Ruka_updates/6)
+ Come and see [HP System explained](https://t.me/GiyuUpdates/4)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio, run_async=True)
