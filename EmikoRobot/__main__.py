@@ -110,7 +110,7 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-EMI_IMG = "https://telegra.ph/file/6cffc468dd2e10f20ab20.jpg"
+EMI_IMG = "https://telegra.ph/file/78a6854e2638381226170.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @x11fq \
@@ -227,12 +227,36 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
                 disable_web_page_preview=False,
             )
+
     else:
-        update.effective_message.reply_text(
-            f"👋 Hi, I'm {dispatcher.bot.first_name}. Nice to meet You.",
-            parse_mode=ParseMode.HTML
-       )       
-        
+        first_name = update.effective_user.first_name
+        update.effective_message.reply_video(
+           EMI_IMG, caption= "<b>oioioi {}, I am Giyu! I am here to make your group powerful.</b>"
+                              "<b> I aim to eradicate all the demons present in your groups in order to protect your group </b>\n<b>Haven't slept since:</b> <code>{}</code>".format(
+                escape_markdown(first_name),
+                uptime
+            ),
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="SUPPORT",
+                            url=f"https://telegram.dog/{SUPPORT_CHAT}",
+                        ),
+                        InlineKeyboardButton(
+                            text="UPDATES",
+                            url="https://telegram.dog/Giyuupdates",
+                        ),
+                        InlineKeyboardButton(
+                          text="HELP", url=f"https://t.me/Giyu_Superbot?start=help"
+                        ),  
+                    ]
+                ]
+            ),
+        )
+
+
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
     # Log the error before we do anything else, so we can see it even if something breaks.
