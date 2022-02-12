@@ -813,7 +813,9 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "Im awake again",
+                f"""**Im awake again[🔥](https://telegra.ph/file/23a22b041385be1d9b711.mp4)**
+**Python:** `{memek()}`
+**Telegram Library:** `v{peler}`""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
