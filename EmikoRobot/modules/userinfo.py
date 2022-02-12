@@ -254,7 +254,7 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text("<code>Oioioi Slaying this demon info...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╔═━「<b> Identity Of This Demon Is:</b> 」\n"
+        f"╔═━「<b> Kono akuma no aidentiti wa:</b> 」\n"
         f"✪ ID: <code>{user.id}</code>\n"
         f"✪ First Name: {html.escape(user.first_name)}"
     )
