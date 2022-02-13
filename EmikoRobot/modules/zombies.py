@@ -49,7 +49,7 @@ async def is_administrator(user_id: int, message):
     return admin
 
 
-@telethn.on(events.NewMessage(pattern="^[!/]Demons ?(.*)"))
+@telethn.on(events.NewMessage(pattern="^[!/]demons ?(.*)"))
 async def rm_deletedacc(show):
     con = show.pattern_match.group(1).lower()
     del_u = 0
@@ -62,7 +62,7 @@ async def rm_deletedacc(show):
                 await sleep(1)
         if del_u > 0:
             del_status = (
-                f"**Founding** `{del_u}` **Demons/Demon On this group,"
+                f"**Founding** `{del_u}` **demons/demon On this group,"
                 "\nClean it with command** `/Demons clean`"
             )
         return await kontol.edit(del_status)
