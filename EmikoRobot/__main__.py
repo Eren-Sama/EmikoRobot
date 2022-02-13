@@ -92,17 +92,17 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Giyu", callback_data="emiko_"),
+        InlineKeyboardButton(text="◉ ᴀʙᴏᴜᴛ ᴍᴇ ◉", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="My Powers", callback_data="help_back"),
+        InlineKeyboardButton(text="◉ ᴍʏ ᴘᴏᴡᴇʀs ◉", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
+            text="◉ ᴛʀʏ ɪɴʟɪɴᴇ ◉​​", switch_inline_query_current_chat=""
         ),
     ],
     [
         InlineKeyboardButton(
-            text=" Summon Me ", url="t.me/Giyu_Superbot?startgroup=new"),
+            text=" ◉ sᴜᴍᴍᴏɴ ᴍᴇ ◉ ", url="t.me/Giyu_Superbot?startgroup=new"),
     ],
 ]
 
