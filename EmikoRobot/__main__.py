@@ -244,9 +244,8 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_video(
-           EMI_IMG, caption= "<b>oioioi {}, I am Giyu! I am here to make your group powerful.</b>"
+           EMI_IMG, caption= "<b>oioioi , I am Giyu! I am here to make your group powerful.</b>"
                               "<b> I aim to eradicate all the demons present in your groups in order to protect your group </b>\n<b>Haven't slept since:</b> <code>{}</code>".format(
-                escape_markdown(first_name),
                 uptime
             ),
             parse_mode=ParseMode.HTML,
