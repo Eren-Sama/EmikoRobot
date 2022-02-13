@@ -49,7 +49,7 @@ async def is_administrator(user_id: int, message):
     return admin
 
 
-@telethn.on(events.NewMessage(pattern="^[!/]zombies ?(.*)"))
+@telethn.on(events.NewMessage(pattern="^[!/]Demons ?(.*)"))
 async def rm_deletedacc(show):
     con = show.pattern_match.group(1).lower()
     del_u = 0
@@ -62,8 +62,8 @@ async def rm_deletedacc(show):
                 await sleep(1)
         if del_u > 0:
             del_status = (
-                f"**Founding** `{del_u}` **Deleted account/Zombie On this group,"
-                "\nClean it with command** `/zombies clean`"
+                f"**Founding** `{del_u}` **Deleted account/Demon On this group,"
+                "\nClean it with command** `/Demons clean`"
             )
         return await kontol.edit(del_status)
     chat = await show.get_chat()
@@ -88,12 +88,12 @@ async def rm_deletedacc(show):
             await telethn(EditBannedRequest(show.chat_id, user.id, UNBAN_RIGHTS))
             del_u += 1
     if del_u > 0:
-        del_status = f"**Cleaned** `{del_u}` **Zombies**"
+        del_status = f"**Cleaned** `{del_u}` **Demons**"
     if del_a > 0:
         del_status = (
-            f"**Cleaned** `{del_u}` **Zombies** "
-            f"\n`{del_a}` **Admin zombies not deleted.**"
+            f"**Cleaned** `{del_u}` **Demons** "
+            f"\n`{del_a}` **Admin Demons not deleted.**"
         )
     await memek.edit(del_status)
 
-__mod_name__ = "Zombies"
+__mod_name__ = "Demons"
