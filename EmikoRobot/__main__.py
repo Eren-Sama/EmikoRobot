@@ -88,7 +88,7 @@ PM_START_TEXT = """
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
 ────────────────────────
-✪ Hit /help to see my available commands.
+✪ ʜɪᴛ /Help ᴛᴏ sᴇᴇ ᴍʏ ᴘᴏᴡᴇʀs.
 """
 
 buttons = [
