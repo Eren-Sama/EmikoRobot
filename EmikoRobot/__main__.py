@@ -81,8 +81,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hello {} !*
-✪ I'm Giyu an Anime-themed management bot [🔥](https://telegra.ph/file/487942517d92244580563.mp4)
+────「 [{}](https://telegra.ph/file/487942517d92244580563.mp4) 」────
+*Hola {} !*
+✪ ɪ'ᴍ ɢɪʏᴜ ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴛᴜɴɴɪɴɢ ғᴇᴀᴛᴜʀᴇs🔥
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
