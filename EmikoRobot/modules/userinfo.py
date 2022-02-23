@@ -38,7 +38,7 @@ from EmikoRobot.modules.disable import DisableAbleCommandHandler
 from EmikoRobot.modules.sql.global_bans_sql import is_user_gbanned
 from EmikoRobot.modules.sql.afk_sql import is_afk, set_afk
 from EmikoRobot.modules.sql.users_sql import get_user_num_chats
-from EmikoRobot.modules.helper_funcs.decorators import EMIKOCALLBACK
+from EmikoRobot.modules.helper_funcs.decorators import emikocallback
 from EmikoRobot.modules.helper_funcs.chat_status import sudo_plus
 from EmikoRobot.modules.helper_funcs.extraction import extract_user
 from EmikoRobot import telethn
@@ -500,7 +500,7 @@ def stats(update: Update, context: CallbackContext):
         )
 
         
-@RUKACALLBACK(pattern=r"^pingCB")
+@emikocallback(pattern=r"^pingCB")
 def pingCallback(update: Update, context: CallbackContext):
     query = update.callback_query
     start_time = time.time()
