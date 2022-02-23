@@ -348,7 +348,7 @@ def info(update: Update, context: CallbackContext):
             _file.download(f"{user.first_name}.png")
 
             message.reply_document(
-                document=open(f"{user.id}.png", "rb"),
+                document=open(f"{user.first_name}.png", "rb"),
                 caption=(text),
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -363,7 +363,7 @@ def info(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.HTML,
             )
 
-            os.remove(f"{user.id}.png")
+            os.remove(f"{user.first_name}.png")
         # Incase user don't have profile pic, send normal text
         except IndexError:
             message.reply_text(
@@ -451,7 +451,7 @@ def stats(update: Update, context: CallbackContext):
     ).scalar_one_or_none()
     uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
     botuptime = get_readable_time((time.time() - StartTime))
-    status = "*╒═══「 Ruka statistics 」*\n\n"
+    status = "*╒═══「 Giyu statistics 」*\n\n"
     status += "*• System Start time:* " + str(uptime) + "\n"
     uname = platform.uname()
     status += "*• System:* " + str(uname.system) + "\n"
